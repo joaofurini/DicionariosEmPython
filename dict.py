@@ -9,8 +9,9 @@ familia = dict(mae = 'Kelly', pai = 'Silvio', irmao = 'Rafa', irma='Mirela')
 ###########################################################################################################
 #CRIANDO O DICIONARIO ANTES
 #Primeiro criamos o dicionario usando colchetes {}
+#Depois chamamos esse dicionario seguidos da chave e value
 #Passamos a chave do dicinario entre chaves[] e entre aspas '' pois é uma string
-#Depois, fora das chaves atribuimos um valor àquela chave
+#Depois, fora das chaves atribuimos com o sinal de igual o valor daquela chave
 linguagens = {}
 linguagens['forte'] = 'Python'
 linguagens['media'] = 'Java'
@@ -19,8 +20,8 @@ linguagens['media-forte'] = 'Node'
 ###########################################################################################################
 #ATRIBUINDO DIVERSOS VALORES
 #Esse modo é uma mistura dos dois
-#Primeiro atribuimos o dicionario a uma variavel e abrimos colchetes
-#Dentro dos colchetes passamos a chave entre aspas 
+#Primeiro atribuimos o dicionário a uma variavel e abrimos colchetes
+#Dentro dos colchetes passamos a chave entre aspas se for String  
 #E por meio dos dois pontos : atribuimos um valor aquela chave
 #Lembrando sempre de colocar virgula depois de cada declaração.
 carros = {
@@ -30,7 +31,7 @@ carros = {
 }
 
 ###########################################################################################################
-#Em dicionarios podemos localizar facilmente um valor passando a chave dele da seuginte forma
+#Em dicionarios podemos localizar facilmente um valor passando a chave dele entre colchetes da seguinte forma
 print('\nSua mae e a: {}'.format(familia['mae']))
 print('Seu pai e o: {}'.format(familia['pai']))
 print('Seu irmao e o: {}'.format(familia['irmao']))
@@ -63,7 +64,7 @@ print('Os valores do dicionario linguagens sao: {}'.format(linguagens.values()))
 #Existem duas formas de iterar em um dicionario 
 #A primeira delas consiste em um loop que para cada item no dicionario ele retorna a key
 #Entao fazemos a iteracao do proprio dicionario passando o item recebido como chave do dicionario
-#Entao para cada carro no dicionario carro ele retorna a key e o carro/value
+#Entao para cada carro no dicionario carro/key ele retorna a key e a cor/value
 #Para cada integrante da familia ele retorna a funcao/key e o integrante/value
 #Para cada linguagem ele retorna o nivel/key e a linguagem/value
 
@@ -85,6 +86,7 @@ for nivel in linguagens:
 #Entretanto isso nao é muito recomendado pela comunidade
 #O modo mais correto é iterando dois itens no dicionario.items() que é uma funcao do python
 #Dessa forma, para cada item, ele retorna a key e o value e joga nas variaveis de iteração
+#Tornando mais facil a iteração do dicionário
 print('\n')
 for key, value in carros.items():
 	print('{} - {}'.format(key, value))
